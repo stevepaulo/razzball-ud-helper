@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  udid: MyString
+  name: MyString
+  position: MyString
+  team: MyString
+  w: 1.5
+  qs: 1.5
+  k: 1.5
+  ip: 1.5
+  er: 1.5
+  s: 1.5
+  d: 1.5
+  t: 1.5
+  hr: 1.5
+  bb: 1.5
+  hbp: 1.5
+  rbi: 1.5
+  r: 1.5
+  sb: 1.5
+
+two:
+  udid: MyString
+  name: MyString
+  position: MyString
+  team: MyString
+  w: 1.5
+  qs: 1.5
+  k: 1.5
+  ip: 1.5
+  er: 1.5
+  s: 1.5
+  d: 1.5
+  t: 1.5
+  hr: 1.5
+  bb: 1.5
+  hbp: 1.5
+  rbi: 1.5
+  r: 1.5
+  sb: 1.5
