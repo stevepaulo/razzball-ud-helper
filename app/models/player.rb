@@ -86,6 +86,8 @@ class Player < ApplicationRecord
     end
 
     CSV.foreach("data/pitchers.csv", headers: true) do |row|
+      next if row["Name"] == "Shohei Ohtani"
+
       p = Player.find_by(name: I18n.transliterate(row["Name"]), team: row["Team"])
       if p.nil?
         puts "Couldn't find #{row["Name"]} (#{row["Team"]})"
