@@ -113,7 +113,7 @@ class Player < ApplicationRecord
   def self.generate_output
     players = Player.all.sort_by(&:points).reverse
 
-    CSV.open("output/rankings.csv", 'w', write_headers: true, headers: ["id"]) do |writer|
+    CSV.open("data/rankings.csv", 'w', write_headers: true, headers: ["id"]) do |writer|
       players.each do |p|
         writer << [p.udid]
       end
