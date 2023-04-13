@@ -122,7 +122,7 @@ class Player < ApplicationRecord
   end
 
   def points
-    return 0.0 if self.w.nil?
+    return 0.0 if self.w.nil? || self.hr.nil?
 
     (self.w * SCORING_MAP[:w]) + (self.qs * SCORING_MAP[:qs]) + (self.k * SCORING_MAP[:k]) + (self.ip * SCORING_MAP[:ip]) + (self.er * SCORING_MAP[:er]) + (self.h * SCORING_MAP[:h]) + (self.hr * SCORING_MAP[:hr]) + (self.bb * SCORING_MAP[:bb]) + (self.rbi * SCORING_MAP[:rbi]) + (self.r * SCORING_MAP[:r]) + (self.sb * SCORING_MAP[:sb]) || 0.0
   rescue
